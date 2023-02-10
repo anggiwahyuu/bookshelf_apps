@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3%;
+    background: rgb(0, 124, 62);
+    color: white;
+}
+
+header form {
+    display: flex;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="search"] {
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    padding-left: 35px;
+    font-size: 14px;
+    color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+main {
+    display: flex;
+    padding-top: 50px;
+}
+
+main section {
+    width: 50%;
+    height: auto;
+}
+
+.left{
+    padding: 0 3%;
+    color: rgb(0, 124, 62);
+}
+
+.left h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left form table {
+    width: 100%;
+}
+
+.left form input {
+    margin-bottom: 10px;
+}
+
+.left form input[type="text"] {
+    width: 98%;
+    padding: 8px 0;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.left form input[type="number"] {
+    width: 98%;
+    padding: 8px 0;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.left form input::placeholder {
+    color: #bbb;
+}
+
+.left form input[type="checkbox"] {
+    accent-color: rgb(0, 124, 62);
+}
+
+#data-submit {
+    background: rgb(0, 124, 62);
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#data-submit:hover {
+    background: rgb(0, 86, 43);
+}
+
+#delete-all-books {
+    margin-top: 10px;
+    background: red;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#delete-all-books:hover {
+    background: rgb(216, 0, 0);
+}
+
+.right{
+    padding: 0 3%;
+    color: rgb(0, 124, 62);
+}
+
+.right h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.right .book-box {
+    width: 100%;
+    height: 265px;
+    border: 1px solid rgb(0, 124, 62);
+    border-radius: 0 0 10px 10px;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.right .book-box .label-box {
+    width: 100%;
+    height: auto;
+    background: rgb(0, 124, 62);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.right .book-box .book-list {
+    height: 220px;
+    padding: 0 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.right .book-box .book-list p {
+    color: black;
+}
+
+#judul-buku {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.book-outline {
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.btn-collection {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn-collection button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-collection form:nth-child(1) button {
+    background: green;
+}
+
+.btn-collection form:nth-child(1) button:hover {
+    background: rgb(0, 90, 0);
+}
+
+.btn-collection form:nth-child(2) button {
+    background: red;
+}
+
+.btn-collection form:nth-child(2) button:hover {
+    background: rgb(216, 0, 0);
+}

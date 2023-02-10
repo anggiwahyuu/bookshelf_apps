@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+        <input type="search" id="searchBook" onkeyup="searchBook()" placeholder="Pencarian Buku...">
+    </header>
+    <main class="container">
+        <section class="left">
+            <h1>Masukkan Buku Baru</h1>
+            <form id="form-book-data">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="form-judul">Judul</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="form-judul" id="form-judul" placeholder="Masukkan Judul..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="form-penulis">Penulis</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="form-penulis" id="form-penulis" placeholder="Masukkan Penulis..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="form-tahun">Tahun</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="form-tahun" id="form-tahun" placeholder="Masukkan Tahun..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="check-selesai-dibaca" id="check-selesai-dibaca">
+                            <label for="check-selesai-dibaca">Selesai Dibaca</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="data-submit">Masukkan Buku ke Rak</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form id="delete-all-books-form">
+                <button type="submit" id="delete-all-books">Hapus Semua Buku</button>
+            </form>
+        </section>
+        <section class="right" id="rak-buku">
+            <h1>Daftar Buku</h1>
+            <article class="book-box" id="selesai-dibaca">
+                <div class="label-box">
+                    <h2>Selesai Dibaca</h2>
+                </div>
+                <div class="book-list" id="book-list-finished"></div>
+            </article>
+            <article class="book-box" id="belum-selesai-dibaca">
+                <div class="label-box">
+                    <h2>Belum Selesai Dibaca</h2>
+                </div>
+                <div class="book-list" id="book-list-unfinished"></div>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
